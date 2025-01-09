@@ -5,6 +5,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
     width: 50%;
   }
   .top-left {
@@ -19,3 +20,8 @@
 .h1{
     text-align: center;
 }
+.carousel-inner img{
+    width: 100%;
+    overflow-y: auto;
+}
+
