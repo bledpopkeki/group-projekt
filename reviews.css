@@ -1,0 +1,12 @@
+.h1{
+    text-align: center;
+}
+.review{
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: column;
+    width: 50px;
+    height: 100px;
+    background-color: gray;
+}
+
