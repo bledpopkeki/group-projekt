@@ -21,7 +21,9 @@
 }
 .cards{
     display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .modal-title{
     color: black;
