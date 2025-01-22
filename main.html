@@ -48,7 +48,7 @@
       </nav>
       
     <div class="container">
-      <div class="arrow l">
+      <div class="arrow l" onclick="previous()">
         <img src="images/lefta.png" alt="l">
       </div>
       <div class="slide slide-1">
@@ -91,6 +91,13 @@
 
         slide[current].style.display = 'block';
         slide[current].style.opacity = 0.4;
+      }function previous(){
+  cls();
+  if(current === 0) current = slide.length; // Loop back to the last slide
+  current--;
+
+  slide[current].style.display = 'block';
+  slide[current].style.opacity = 0.4;
       }
 
       function start(){
@@ -103,7 +110,7 @@
 <br>
 <br>
 <br>
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 540px; margin-left: 20%;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="images/small.jpg" class="img-fluid rounded-start" alt="...">
@@ -118,7 +125,7 @@
   </div>
 </div>
 
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 540px; margin-left: 52%;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="images/flower.png" class="img-fluid rounded-start" alt="...">
@@ -133,11 +140,90 @@
   </div>
 </div>
 
-<footer>
-  <h2>Contact Us</h2>
-  <p>Email: pylyfinamall@gmail.com</p>
-  <p>Phone: 145 777 459</p>
-</footer>
+<div class="container-fluid my-5" style="width: 100%; margin-left: 0%;">
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331; width: 100%; margin-left: 0%;">
+    <section class="d-flex justify-content-between p-4" style="background-color: #6351ce; width: 100%; margin-left: 0%;">
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Pylyfyna mall</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore totam, quisquam dolorum voluptate libero!</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Pages</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="main.html" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="shops.html" class="text-white">Stores</a>
+            </p>
+            <p>
+              <a href="reviews.html" class="text-white">Reviews</a>
+            </p>
+            <p>
+              <a href="contactus.html" class="text-white">Contact us</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Social Media</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="https://instagram.com" class="text-white">Instagram</a>
+            </p>
+            <p>
+              <a href="https://facebook.com" class="text-white">Facebook</a>
+            </p>
+            <p>
+              <a href="https://tiktok.com" class="text-white">Tiktok</a>
+            </p>
+            <p>
+              <a href="https://viber.com" class="text-white">Viber</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2025 Copyright:
+      <a class="text-white" href="google.com">Pylyfynamall.com</a>
+    </div>
+  </footer>
+</div>
 </html>
       </body>
       </html>
