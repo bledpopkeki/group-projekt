@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Real Madrid Fan Site</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1><img src="logo.png" alt="Real Madrid" class="logo"> Real Madrid Fans</h1>
+<nav>
+<button id="themeToggle" class="btn">Ndrysho Temë</button>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<section class="hero">
+<h2>Përshëndetje, tifoz i Real Madrid!</h2>
+<p>Kërko dhe zgjidh lojtarin, shiko gallery-në dhe na shkruaj.</p>
+</section>
+
+<section class="controls">
+<input id="search" placeholder="Kërko lojtar (Emër)..." />
+<select id="positionFilter">
+<option value="">Të gjitha pozicionet</option>
+</select>
+</section>
+
+<section id="players" class="players-grid" aria-live="polite">
+<!-- Lojtarët ngarkohen me JS -->
+<div class="loading">Ngarkoj lojtarët...</div>
+</section>
+
+<section class="gallery">
+<h3>Gallery</h3>
+<div class="gallery-grid" id="galleryGrid">
+<!-- Imazhe shembull -->
+<img src="img/stadium1.jpg" alt="Santiago Bernabéu" />
+<img src="img/team1.jpg" alt="Ekipi" />
+<img src="img/match1.jpg" alt="Ndeshje" />
+</div>
+</section>
+
+<section class="contact">
+<h3>Na shkruaj</h3>
+<form id="contactForm" method="POST" action="contact.php" novalidate>
+<label>Emri
+<input name="name" id="name" required />
+</label>
+<label>Email
+<input name="email" id="email" type="email" required />
+</label>
+<label>Mesazhi
+<textarea name="message" id="message" required></textarea>
+</label>
+<button type="submit" class="btn">Dërgo</button>
+<div id="formMsg" role="status"></div>
+</form>
+</section>
+</main>
+
+<!-- Modal për gallery / lojtar -->
+<div id="modal" class="modal" aria-hidden="true">
+<div class="modal-content">
+<button id="modalClose" class="modal-close" aria-label="Mbyll">✕</button>
+<div id="modalBody"></div>
+</div>
+</div>
+
+<footer class="site-footer">
+<div class="container">
+<small>Projekti demo i fanave — jo zyrtar.</small>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
